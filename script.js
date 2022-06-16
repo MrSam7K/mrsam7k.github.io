@@ -17,6 +17,31 @@ const countdown = () => {
     document.querySelector(".hour").innerText = textHour
     document.querySelector(".min").innerText = textMin
     document.querySelector(".sec").innerText = textSec
+
+    if(textDay <= 0){
+        document.querySelector(".day").innerText = ""
+        document.querySelector(".dayText").innerText = ""
+    } else {
+        document.querySelector(".dayText").innerText = "Dienos"
+    }
+    if(textHour <= 0){
+        document.querySelector(".hour").innerText = ""
+        document.querySelector(".hourText").innerText = ""
+    } else {
+        document.querySelector(".hourText").innerText = "Valandos"
+    }
+    if(textMin <= 0){
+        document.querySelector(".min").innerText = ""
+        document.querySelector(".minText").innerText = ""
+    } else {
+        document.querySelector(".minText").innerText = "Minutės"
+    }
+    if(textSec <= 0){
+        document.querySelector(".sec").innerText = ""
+        document.querySelector(".secText").innerText = ""
+    } else {
+        document.querySelector(".secText").innerText = "Sekundės"
+    }
 }
 
-setInterval(countdown, 1000)
+setInterval(countdown, 500)
