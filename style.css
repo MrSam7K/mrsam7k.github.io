@@ -25,7 +25,7 @@ h2 {
 .countdown {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -34,4 +34,15 @@ h2 {
 .min,
 .sec {
     font-size: 3rem;
+}
+
+span + span {
+    margin-left: 10px;
+}
+
+.dayText,
+.hourText,
+.minText,
+.secText {
+    color: black;
 }
